@@ -1,3 +1,3 @@
 # PrivyChat
 
-npm install & npm start
+npm install & ng serve

@@ -1,0 +1,9 @@
+<md-card class="card">
+  <md-card-content>
+    <h1>{{link}}</h1>
+  </md-card-content>
+  <md-card-actions align="end">
+    <button md-raised-button ngxClipboard [cbContent]="link" (cbOnSuccess)="copied()">COPY</button>
+  </md-card-actions>
+</md-card>
+

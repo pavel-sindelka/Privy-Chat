@@ -1,0 +1,10 @@
+<md-card class="card">
+  <md-card-content>
+    <md-input-container class="full-width">
+      <textarea mdInput placeholder="Message" rows="10" [(ngModel)]="message"></textarea>
+    </md-input-container>
+  </md-card-content>
+  <md-card-actions align="end">
+    <button md-raised-button (click)="sendMessage()">SEND</button>
+  </md-card-actions>
+</md-card>

@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {MdDialog} from '@angular/material';
+
+import {HowToUseDialogComponent} from './how-it-works-dialog/how-it-works-dialog.component'
 
 @Component({
   selector: 'app-messenger',
@@ -7,9 +10,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MessengerComponent implements OnInit {
 
-  constructor() { }
+  constructor(private dialog: MdDialog) {
+  }
 
   ngOnInit() {
   }
 
+  openDialog() {
+    this.dialog.open(HowToUseDialogComponent);
+  }
 }

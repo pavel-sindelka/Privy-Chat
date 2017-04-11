@@ -18,6 +18,7 @@ import {Error404Component} from './error/error404/error404.component';
 import {LinkComponent} from './messenger/link/link.component';
 import {MessageComponent} from './messenger/message/message.component';
 import {MessengerComponent} from './messenger/messenger.component';
+import {HowToUseDialogComponent} from './messenger/how-it-works-dialog/how-it-works-dialog.component';
 
 const firebaseConfig = {
   apiKey: "AIzaSyBpMkzjMH-IfDl6tNdj-YdKOhpXGQ4bGaU",
@@ -38,7 +39,8 @@ export const iv = CryptoJS.enc.Base64.parse("#hypnoz#");
     Error404Component,
     LinkComponent,
     MessageComponent,
-    MessengerComponent
+    MessengerComponent,
+    HowToUseDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -52,7 +54,8 @@ export const iv = CryptoJS.enc.Base64.parse("#hypnoz#");
     ClipboardModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [HowToUseDialogComponent]
 })
 export class AppModule {
 }
